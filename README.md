@@ -1,5 +1,14 @@
-# first_machine_learning_for_heart_disease
-This repository is for practising making machine learning models for data sets based on health data sets accessed from Kaggle
-The final_heart_disease_model is my first project based on the data set written by Redwan Sony et. al., 2020
-It is composed of 14 attributes, which are age, sex, chest pain type, resting blood pressure, serum cholesterol, fasting blood sugar, resting electrocardiographic results, maximum heart rate achieved, exercise-induced angina, oldpeak — ST depression induced by exercise relative to rest, the slope of the peak exercise ST segment, number of major vessels and Thalassemia. This database includes 76 attributes, but all published studies relate to the use of a subset of 14 of them
-. The notebook labelled "own attempt" is, as it says on the tin, my own attempt, with guidance from YouTube and some AI. What I found writing up this ML model was that the regression model used by the YouTuber was not appropriate for my data set. I discovered this early when writing up the code for it, but decided to proceed with the incorrect model for my own learning. I later found out that, because the incorrect model was used, my accuracy scores were poor. This is because I used the logistic regression model, which is better for binary data; however, mine contained words. The final heart disease model is primarily used with AI, with my own attempts at debugging the code to make it work better in Google Colab. The accuracy scores from that succeeded much more than my own attempt, as I opted to use a random forest classifier to deal with wordy data better. 
+**Heart Disease Prediction Model**
+Overview
+This repository is for practising making machine learning models using health datasets from Kaggle. The final_heart_disease_model.ipynb is my first project, based on the dataset by Redwan Sony et al., 2020.
+Dataset
+The dataset consists of 14 attributes: age, sex, chest pain type, resting blood pressure, serum cholesterol, fasting blood sugar, resting electrocardiographic results, maximum heart rate achieved, exercise-induced angina, oldpeak (ST depression induced by exercise relative to rest), the slope of the peak exercise ST segment, number of major vessels, and Thalassemia.
+Although the full database includes 76 attributes, all published studies (including this one) use a subset of just these 14.
+Notebooks
+
+own_attempt.ipynb: This is my initial attempt at building the model, guided by YouTube tutorials and some AI tools. I followed along but made adjustments based on what I learned.
+final_heart_disease_model.ipynb: This is the refined version, where I relied more on AI for the core structure but handled debugging myself to make it work better in Google Colab.
+
+Lessons Learned
+While working on the "own attempt" notebook, I realized early on that the regression model from the YouTuber wasn't suitable for my dataset. I decided to continue with it anyway for the learning experience. Later, I figured out why my accuracy scores were so poor: I had used logistic regression, which works best for binary data, but my dataset included categorical features (like words or labels).
+For the final model, switching to a random forest classifier handled the "wordy" data much better, leading to significantly higher accuracy scores.
